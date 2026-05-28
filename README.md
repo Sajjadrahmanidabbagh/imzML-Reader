@@ -1,4 +1,4 @@
 # imzML-Reader
-This Python code is developed for quick visualization of imzML files (Mass Spectrometry Imaging Data).
+This Python code is developed for quick visualization of imzML files (Mass Spectrometry Imaging (MSI) Data).
 
 This script loads an imzML mass spectrometry imaging (MSI) dataset, reconstructs a 2D image based on pixel coordinates, and visualizes the spatial distribution of Total Ion Current (TIC). It uses pyimzML to parse spectra and extract m/z–intensity data for each pixel, computes the TIC by summing intensities at each coordinate, and assembles these values into a 2D NumPy array that matches the acquisition geometry. The image is then orientation-corrected to account for imzML coordinate conventions and displayed using Matplotlib with a color map for quick assessment of sample alignment and data quality. This provides a simple but effective pipeline for validating imzML spatial integrity and visualizing overall signal intensity across the tissue section.
